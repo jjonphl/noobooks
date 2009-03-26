@@ -1,0 +1,15 @@
+<table id="content" colspace="0" border="0">
+  <tr>
+    <td style="width:175px">
+      <%= test2 %>
+      <% if !logged_in? -%>
+        <%= render :partial => 'common/login' %>
+      <% else -%>
+        <%= link_to 'Logout', logout_path %>
+      <% end -%>
+    </td>
+    <td>
+      <h1>The entire content</h1>
+    </td>
+  </tr>
+</table>

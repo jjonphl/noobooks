@@ -1,0 +1,18 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+  <title><%= @title || 'NooBooks' %></title>
+  <%= yield :headers %>
+  <%= stylesheet_link_tag 'styles' %>
+  <%= yield :stylesheets %>
+  <%= yield :javascripts %>
+</head>
+<body>
+  <a href="/" accesskey="h"><img src="/images/noobooks_banner.jpg" alt="noobooks" border="0"></a>
+<div class="search">
+    &nbsp;
+</div>
+<%= yield %>
+<%= yield :finale %>
+</body>
+</html>

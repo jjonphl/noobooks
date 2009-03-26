@@ -1,0 +1,4 @@
+*.swp
+tmp
+*.sqlite3
+*.log

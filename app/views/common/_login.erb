@@ -1,0 +1,8 @@
+<% form_tag session_path do -%>
+<table>
+  <tr><td>username</td><td><input name="login" type="text" style="width:100px"></td></tr>
+  <tr><td>password</td><td><input name="password" type="password" style="width:100px"></td></tr>
+  <tr><td colspan="2" style="text-align:right"><input type="submit" value="log in"></td></tr>
+</table>
+<% end -%>
+<div><%= link_to 'sign up', signup_url %></div>
